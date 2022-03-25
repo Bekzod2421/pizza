@@ -176,5 +176,120 @@ body {
 	text-align: center;
 	padding: 45px 0;
 }
+.mobile-menu {
+	position: fixed;
+	right: 30px;
+	top: 50px;
+	display: flex;
+	flex-direction: column;
+	row-gap: 5px;
+	display: none;
+	cursor: pointer;
+}
+.mobile-menu span {
+	width: 40px;
+	height: 5px;
+	background-color: #000;
+	border-radius: 5px;
+}
+@media screen and (max-width:1200px) {
+	.wrap {
+		padding-left: 25px;
+		padding-right: 25px;
+	}
+}
+@media screen and (max-width:768px) {
+	.text {
+		width: 100%;
+	}
+	.mobile-menu {
+		display: flex;
+	}
+	.menu {
+		display: none;
+	}
+}
+@media screen and (max-width:650px) {
+	.container {
+		flex-direction: column-reverse;
+		row-gap: 30px;
+	}
+}
+@media screen and (max-width: 610px) {
+	.pmenu {
+		flex-wrap: wrap;
+		row-gap: 20px;
+	}
+}
+@media screen and (max-width: 500px) {
+	.ptext {
+		padding: 0 20px;
+	}
+}
+@media screen and (max-width: 425px) {
+	.head {
+		padding: 20px 25px 26px 25px;
+	}
+	.mobile-menu {
+		top: 35px;
+	}
+	.content {
+		padding-top: 0;
+		padding-bottom: 60px;
+	}
+	.title {
+		font-size: 34px;
+		margin-bottom: 15px;
+	}
+	.desc {
+		font-size: 18px;
+		line-height: 24px;
+	}
+	.read {
+		font-size: 18px;
+		padding: 10px 15px;
+	}
+	.ptitle {
+		font-size: 34px;
+		margin-bottom: 15px;
+		margin-top: 40px;
+	}
+	.slogan {
+		font-size: 18px;
+		margin-bottom: 30px;
+		line-height: 24px;
+	}
+	.pmenu {
+		row-gap: 10px;
+		column-gap: 30px;
+		margin-bottom: 30px;
+	}
+	.top {
+		margin-top: 25px;
+		margin-bottom: 20px;
+	}
+	.create {
+		font-size: 34px;
+		margin-bottom: 15px;
+	}
+	.ptext {
+		font-size: 20px;
+	}
+	.pizza {
+		margin-bottom: 35px;
+	}
+	.legend {
+		font-size: 22px;
+		padding: 20px 30px;
+	}
+	.footer {
+		margin-top: 50px;
+	}
+	.bottom {
+		font-size: 18px;
+		padding: 30px 0;
+		line-height: 24px;
+	}
+}
 
 
